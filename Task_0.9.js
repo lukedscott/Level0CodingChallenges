@@ -1,13 +1,13 @@
+function vowels(word) {
 var number;
 var i;
 var string = " ";
-function vowels(param) {
-    number = (param.length);
+    number = (word.length);
     for (i = 0; i < number; i++) {
-    if (param.charAt(i) == "a" || param.charAt(i) == "e" || param.charAt(i) == "i" || param.charAt(i) == "o" ||param.charAt(i) == "u") {
-    string = string + param.charAt(i);
-}   else if (param.charAt(i) == "A" || param.charAt(i) == "E" || param.charAt(i) == "I" || param.charAt(i) == "O" || param.charAt(i) == "U") {
-    string = string + param.charAt(i);
+    if (word.charAt(i) == "a" || word.charAt(i) == "e" || word.charAt(i) == "i" || word.charAt(i) == "o" ||word.charAt(i) == "u") {
+    string = string + word.charAt(i);
+}   else if (word.charAt(i) == "A" || word.charAt(i) == "E" || word.charAt(i) == "I" || word.charAt(i) == "O" || word.charAt(i) == "U") {
+    string = string + word.charAt(i);
 } 
     
 }

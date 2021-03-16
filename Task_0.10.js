@@ -1,10 +1,11 @@
+function commonLetters(word1, word2) {
 var string1 = " "
-function commonLetters(param1, param2) {
-    for(i = 0; i < param1.length; i++) {
-        c = param1.charAt(i);
-        if(param2.indexOf(c) !== -1)
-        string1 = string1 + c;
+var common;                                              
+    for(i = 0; i < word1.length; i++) {
+        common = word1.charAt(i);
+        if(word2.indexOf(common) !== -1)
+        string1 = string1 + common;
     }
     return string1;
 }
-console.log(commonLetters("lurk", "work"));
+console.log(commonLetters("definitive", "instinctive"));

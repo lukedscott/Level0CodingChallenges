@@ -3,7 +3,6 @@ function evenOrOdd(number) {
         return "Even";
     } else {
         return "Odd";
-
     }
 }
 console.log(evenOrOdd(13));

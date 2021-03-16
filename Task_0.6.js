@@ -5,9 +5,6 @@ function maxNumber(num1, num2, num3) {
         return num2;
     }   else {
         return num3;
-    
-
     }
-
 }
 console.log(maxNumber(100, 99, 102));

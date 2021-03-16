@@ -1,8 +1,8 @@
+function getHoursMinutes(num) {
 var hours;
 var minutes;
 var string1 = "";
 var string2 = "";
-function getHoursMinutes(num) {
     hours = Math.floor(num/60);
     minutes = num - (hours * 60);
     if (hours == 1) {
@@ -17,4 +17,4 @@ function getHoursMinutes(num) {
     }
     return(hours + " " + string1 + " " + minutes + " " + string2);
 }
-console.log(getHoursMinutes(5786));
+console.log(getHoursMinutes(61));

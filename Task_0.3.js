@@ -1,4 +1,6 @@
-function hello(param1, param2) {         //Function takes in two parameters, and prints those values to console
-    console.log(param1, param2);
+function hello(name) {
+var string = " ";
+    string = "Hello" + " " + name + "!";
+    return string;
 }
-hello("Hello", "Luke!");
+console.log(hello("Luke"));
