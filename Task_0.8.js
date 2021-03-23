@@ -15,6 +15,6 @@ function getHoursMinutes(num) {
         } else {
             string2 = "minutes";
         }
-        return('"' + hours + " " + string1 + "," + " " + minutes + " " + string2);
+        return(hours + " " + string1 + "," + " " + minutes + " " + string2);
     }
     console.log(getHoursMinutes(129));
