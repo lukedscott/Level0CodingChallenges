@@ -5,4 +5,5 @@ var semiperimeter;
     area = Math.sqrt(semiperimeter * (semiperimeter - side1) * (semiperimeter - side2) * (semiperimeter - side3));     
     return area;
 }
+
 console.log(getArea(14, 10, 13));
