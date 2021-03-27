@@ -1,10 +1,21 @@
-var string1 = " "
-function commonLetters(param1, param2) {
-    for(i = 0; i < param1.length; i++) {
-        c = param1.charAt(i);
-        if(param2.indexOf(c) !== -1)
-        string1 = string1 + c;
+function commonLetters(str1, str2) {
+var boolean;
+var i;
+var j;
+var outputstring = "";
+    for(i = 0; i < str1.length; i++) {
+        boolean = false;
+        j = 0;
+        while((j < str2.length) && (boolean == false)) { 
+        if ((str1.charAt(i) == str2.charAt(j)) && (outputstring.indexOf(str1.charAt(i))== -1)) {
+        boolean = true;
+        outputstring = outputstring + str1.charAt(i) + "," ;
+        } else {
+          j++;
+        }
+        }
     }
-    return string1;
+        return "Common letters: " + outputstring.substr(0, outputstring.length - 1);
 }
-console.log(commonLetters("lurk", "work"));
+        
+console.log(commonLetters("house", "computers"));
