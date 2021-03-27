@@ -1,9 +1,8 @@
 function evenOrOdd(number) {
-    if(number %2 == 0) {             
-        return "Even";
+    if(number %2 === 0) {             
+        console.log("even");
     } else {
-        return "Odd";
-
+        console.log("odd");
     }
 }
-console.log(evenOrOdd(13));
+evenOrOdd(5);
